@@ -17,8 +17,9 @@ type Volume struct {
 }
 
 type Lun struct {
-	TargetIQN string  `json:"targetIQN"`
-	Volume    *Volume `json:"volume"`
+	TargetIQN string   `json:"targetIQN"`
+	Volume    *Volume  `json:"volume"`
+	AclIpList []string `json:"aclList"`
 }
 
 type Target struct {
