@@ -17,9 +17,10 @@ type Volume struct {
 }
 
 type Lun struct {
-	TargetIQN string   `json:"targetIQN"`
-	Volume    *Volume  `json:"volume"`
-	AclIpList []string `json:"aclList"`
+	TargetIQN  string   `json:"targetIQN"`
+	Volume     *Volume  `json:"volume"`
+	AclIpList  []string `json:"aclList"`
+	EnableChap bool     `json:"enableCHAP"`
 }
 
 type Target struct {
